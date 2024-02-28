@@ -8,7 +8,10 @@ public class Conversions {
 	
 	//method to convert given temperature in celsius to Fahrenheit
 	public double celsiusToFahrenheit(double tempCelsius) {
-		return tempCelsius;
+		//calculation with usage of formula x*9/5+32
+		double rawFahrenheit=(tempCelsius*9/5)+32;
+		//format it to limit result to two digits in decimal part
+		return Math.round(rawFahrenheit*100.0)/100.0;
 	}
 	
 	//method to convert given temperature in Fahrenheit to celsius
