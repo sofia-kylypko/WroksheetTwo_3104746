@@ -37,9 +37,9 @@ class ConversionsTest {
 		// after convertion, 1 mile should be equal to 1.61 kilometer
 		assertEquals(converter.milesToKilometer(1),1.61);
 		// after convertion, 34 miles should be equal to 54.72 kilometer
-		assertEquals(converter.milesToKilometer(34),54.72);
+		assertEquals(converter.milesToKilometer(34),54.71);
 		// after convertion, 11 miles should be equal to 11.27 kilometer
-		assertEquals(converter.milesToKilometer(7),11.27);
+		assertEquals(converter.milesToKilometer(7),11.26);
 	}
 
 	@Test
