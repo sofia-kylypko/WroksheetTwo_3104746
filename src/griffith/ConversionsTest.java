@@ -20,7 +20,14 @@ class ConversionsTest {
 
 	@Test
 	void testFahrenheitToCelsius() {
-		fail("Not yet implemented");
+		//creation of new conversion object to test it's fahrenheit to celsius convertion
+		Conversions converter = new Conversions();
+		// after convertion, 78 degree in fahrenheit will give 25.55 degree in celsius
+		assertEquals(converter.fahrenheitToCelsius(78),25.56);
+		// after convertion, 0 degree in fahrenheit will give -17.77 degree in celsius
+		assertEquals(converter.fahrenheitToCelsius(0), -17.78);
+		// after convertion, -10 degree in fahrenheit will give -23.33 degree in celsius
+		assertEquals(converter.fahrenheitToCelsius(-10), -23.33);
 	}
 
 	@Test
