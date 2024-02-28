@@ -32,7 +32,14 @@ class ConversionsTest {
 
 	@Test
 	void testMilesToKilometer() {
-		fail("Not yet implemented");
+		//creation of new conversion object to test it's miles to kilometer
+		Conversions converter = new Conversions();
+		// after convertion, 1 mile should be equal to 1.61 kilometer
+		assertEquals(converter.milesToKilometer(1),1.61);
+		// after convertion, 34 miles should be equal to 54.72 kilometer
+		assertEquals(converter.milesToKilometer(34),54.72);
+		// after convertion, 11 miles should be equal to 11.27 kilometer
+		assertEquals(converter.milesToKilometer(7),11.27);
 	}
 
 	@Test
