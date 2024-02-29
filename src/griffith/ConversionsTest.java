@@ -32,7 +32,7 @@ class ConversionsTest {
 
 	@Test
 	void testMilesToKilometer() {
-		//creation of new conversion object to test it's miles to kilometer
+		//creation of new conversion object to test it's miles to kilometer convertion
 		Conversions converter = new Conversions();
 		// after convertion, 1 mile should be equal to 1.61 kilometer
 		assertEquals(converter.milesToKilometer(1),1.61);
@@ -44,7 +44,7 @@ class ConversionsTest {
 
 	@Test
 	void testKilometerToMiles() {
-		//creation of new conversion object to test it's kilometer to miles
+		//creation of new conversion object to test it's kilometer to miles convertion
 		Conversions converter = new Conversions();
 		// after convertion, 1 kilometer should be equal to 0.62 mile
 		assertEquals(converter.kilometerToMiles(1),0.62);
@@ -56,7 +56,14 @@ class ConversionsTest {
 
 	@Test
 	void testUpperCaseToLowerCase() {
-		fail("Not yet implemented");
+		//creation of new conversion object to test it's string formating convertion
+		Conversions converter = new Conversions();
+		// after convertion, initial string should be all in upper case
+		assertEquals(converter.upperCaseToLowerCase("APPLE"),"apple");
+		
+		assertEquals(converter.upperCaseToLowerCase("cAn"),"can");
+		
+		assertEquals(converter.upperCaseToLowerCase("potato"),"potato");
 	}
 
 	@Test
