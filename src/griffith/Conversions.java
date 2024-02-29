@@ -40,13 +40,14 @@ public class Conversions {
 	
 	//method to switch all upper case values to lower case values
 	public String upperCaseToLowerCase(String initString) {
-		//we need just to apply method to fully convert all string elements to upper case
+		//we need just to apply method to fully convert all string elements to lower case
 		return initString.toLowerCase();
 	}
 	
 	//method to switch all lower case values to upper case values
 	public String lowerCaseToUpperCase(String initString) {
-		return null;
+		//we need just to apply method to fully convert all string elements to upper case
+		return initString.toUpperCase();
 	}
 	
 }
