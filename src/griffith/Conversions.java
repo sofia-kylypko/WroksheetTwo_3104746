@@ -26,14 +26,16 @@ public class Conversions {
 	public double milesToKilometer(double distanceMiles) {
 		//calculation with usage of formula x*1.609
 		double rawKilometer=distanceMiles*1.609;
-		System.out.println(Math.round(rawKilometer*100.0)/100.0);
 		//format it to limit result to two digits in decimal part
 		return Math.round(rawKilometer*100.0)/100.0;
 	}
 	
 	//method to convert given distance from kilometer to miles
 	public double kilometerToMiles(double distanceKilometers) {
-		return distanceKilometers;
+		//calculation with usage of formula x/1.609
+		double rawMiles=distanceKilometers/1.609;
+		//format it to limit result to two digits in decimal part
+		return Math.round(rawMiles*100.0)/100.0;
 	}
 	
 	//method to switch all upper case values to lower case values
