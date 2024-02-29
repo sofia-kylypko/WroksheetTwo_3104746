@@ -45,7 +45,7 @@ public class Conversions {
 	}
 	
 	//method to switch all lower case values to upper case values
-	public String lowerCaseToUpperCase() {
+	public String lowerCaseToUpperCase(String initString) {
 		return null;
 	}
 	

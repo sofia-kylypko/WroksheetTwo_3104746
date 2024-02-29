@@ -68,7 +68,14 @@ class ConversionsTest {
 
 	@Test
 	void testLowerCaseToUpperCase() {
-		fail("Not yet implemented");
+		//creation of new conversion object to test it's string formating convertion
+		Conversions converter = new Conversions();
+		// after convertion, initial string should be all in upper case
+		assertEquals(converter.lowerCaseToUpperCase("phone"),"PHONE");
+		
+		assertEquals(converter.lowerCaseToUpperCase("cAn"),"CAN");
+		
+		assertEquals(converter.lowerCaseToUpperCase("PIZZA"),"PIZZA");
 	}
 
 }
